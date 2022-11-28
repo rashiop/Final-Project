@@ -1,0 +1,154 @@
+# Path related
+dataset_dir: ../data/raw/
+dataset_path: covid_data.csv
+dataset_cleaned_path: ../data/processed/covid_dataset.pkl
+train_set_path:
+- ../data/processed/x_train.pkl
+- ../data/processed/y_train.pkl
+valid_set_path:
+- ../data/processed/x_valid.pkl
+- ../data/processed/y_valid.pkl
+test_set_path:
+- ../data/processed/x_test.pkl
+- ../data/processed/y_test.pkl
+train_feng_set_path:
+- data/processed/x_train_feng.pkl
+- data/processed/y_train_feng.pkl
+valid_feng_set_path:
+- data/processed/x_valid_feng.pkl
+- data/processed/y_valid_feng.pkl
+test_feng_set_path:
+- data/processed/x_test_feng.pkl
+- data/processed/y_test_feng.pkl
+production_model_path: models/production_model.pkl
+ohe_stasiun_path: models/ohe_stasiun.pkl
+le_encoder_path: models/le_encoder.pkl
+training_log_path: log/training_log.json
+
+# Debug related
+print_debug: true
+
+# Columns by data type related:
+int_columns:
+- USMER
+- MEDICAL_UNIT
+- SEX
+- PATIENT_TYPE
+- INTUBED
+- PNEUMONIA
+- AGE
+- PREGNANT
+- DIABETES
+- COPD
+- ASTHMA
+- INMSUPR
+- HIPERTENSION
+- OTHER_DISEASE
+- CARDIOVASCULAR
+- OBESITY
+- RENAL_CHRONIC
+- TOBACCO
+- CLASIFFICATION_FINAL
+- ICU
+- DEATH
+
+# Predictors and label related
+label: DEATH
+predictors:
+- USMER
+- MEDICAL_UNIT
+- SEX
+- PATIENT_TYPE
+- INTUBED
+- PNEUMONIA
+- AGE
+- PREGNANT
+- DIABETES
+- COPD
+- ASTHMA
+- INMSUPR
+- HIPERTENSION
+- OTHER_DISEASE
+- CARDIOVASCULAR
+- OBESITY
+- RENAL_CHRONIC
+- TOBACCO
+- CLASIFFICATION_FINAL
+- ICU
+
+# Range of data related
+range_dead:
+- 1
+- 2
+range_usmr:
+- 1
+- 2
+range_medical_unit:
+- 1
+- 13
+range_sex:
+- 1
+- 2
+range_patient_type:
+- 1
+- 2
+range_intubed:
+- 1
+- 2
+range_pneumonia:
+- 1
+- 2 
+range_age:
+- 0
+- 121
+range_pregnant:
+- 1
+- 2
+range_diabetes:
+- 1
+- 2
+range_copd:
+- 1
+- 2
+range_asthma:
+- 1
+- 2
+range_inmsupr:
+- 1
+- 2
+range_hipertension:
+- 1
+- 2
+range_other_disease:
+- 1
+- 2
+range_cardiovascular:
+- 1
+- 2
+range_obesity:
+- 1
+- 2
+range_renal_chronic:
+- 1
+- 2
+range_tobacco:
+- 1
+- 2
+range_classification:
+- 1
+- 7
+range_icu:
+- 1
+- 2
+
+# Replacement for missing value related
+missing_value_pm10:
+  BAIK: 28
+  TIDAK BAIK: 55
+missing_value_pm25:
+  BAIK: 38
+  TIDAK BAIK: 82
+missing_value_so2: 35
+missing_value_co: 11
+missing_value_o3: 29
+missing_value_no2: 18
