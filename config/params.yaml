@@ -29,6 +29,8 @@ training_log_path: log/training_log.json
 print_debug: true
 
 # Columns by data type related:
+object_columns:
+- DATE_DIED
 int_columns:
 - USMER
 - MEDICAL_UNIT
@@ -50,10 +52,9 @@ int_columns:
 - TOBACCO
 - CLASIFFICATION_FINAL
 - ICU
-- DEATH
 
 # Predictors and label related
-label: DEATH
+label: DATE_DIED
 predictors:
 - USMER
 - MEDICAL_UNIT
@@ -77,69 +78,66 @@ predictors:
 - ICU
 
 # Range of data related
-range_dead:
-- 1
-- 2
 range_usmr:
 - 1
-- 2
+- 99
 range_medical_unit:
 - 1
 - 13
 range_sex:
 - 1
-- 2
+- 99
 range_patient_type:
 - 1
-- 2
+- 99
 range_intubed:
 - 1
-- 2
+- 99
 range_pneumonia:
 - 1
-- 2 
+- 99
 range_age:
 - 0
 - 121
 range_pregnant:
 - 1
-- 2
+- 99
 range_diabetes:
 - 1
-- 2
+- 99
 range_copd:
 - 1
-- 2
+- 99
 range_asthma:
 - 1
-- 2
+- 99
 range_inmsupr:
 - 1
-- 2
+- 99
 range_hipertension:
 - 1
-- 2
+- 99
 range_other_disease:
 - 1
-- 2
+- 99
 range_cardiovascular:
 - 1
-- 2
+- 99
 range_obesity:
 - 1
-- 2
+- 99
 range_renal_chronic:
 - 1
-- 2
+- 99
 range_tobacco:
 - 1
-- 2
+- 99
 range_classification:
 - 1
 - 7
 range_icu:
 - 1
-- 2
+- 99
 
 # Replacement for missing value related
 missing_value_pm10:
