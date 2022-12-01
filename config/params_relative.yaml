@@ -1,36 +1,38 @@
 # Path related
-dataset_dir: ../data/raw/
+dataset_dir: data/raw/
 dataset_path: covid_data.csv
-dataset_cleaned_path: ../data/processed/covid_dataset.pkl
+dataset_cleaned_path: data/processed/covid_dataset.pkl
+raw_dataset_path: data/processed/raw_dataset.pkl
+cleaned_raw_dataset_path: data/processed/raw_dataset.pkl
 train_set_path:
-- ../data/processed/x_train.pkl
-- ../data/processed/y_train.pkl
+- data/processed/x_train.pkl
+- data/processed/y_train.pkl
 valid_set_path:
-- ../data/processed/x_valid.pkl
-- ../data/processed/y_valid.pkl
+- data/processed/x_valid.pkl
+- data/processed/y_valid.pkl
 test_set_path:
-- ../data/processed/x_test.pkl
-- ../data/processed/y_test.pkl
+- data/processed/x_test.pkl
+- data/processed/y_test.pkl
 train_set_rus_path:
-- ../data/processed/x_rus.pkl
-- ../data/processed/y_rus.pkl
+- data/processed/x_rus.pkl
+- data/processed/y_rus.pkl
 train_set_ros_path:
-- ../data/processed/x_ros.pkl
-- ../data/processed/y_ros.pkl
+- data/processed/x_ros.pkl
+- data/processed/y_ros.pkl
 train_set_sm_path:
-- ../data/processed/x_sm.pkl
-- ../data/processed/y_sm.pkl
+- data/processed/x_sm.pkl
+- data/processed/y_sm.pkl
 train_feng_set_path:
-- ../data/processed/x_train_feng.pkl
-- ../data/processed/y_train_feng.pkl
+- data/processed/x_train_feng.pkl
+- data/processed/y_train_feng.pkl
 valid_feng_set_path:
-- ../data/processed/x_valid_feng.pkl
-- ../data/processed/y_valid_feng.pkl
+- data/processed/x_valid_feng.pkl
+- data/processed/y_valid_feng.pkl
 test_feng_set_path:
-- ../data/processed/x_test_feng.pkl
-- ../data/processed/y_test_feng.pkl
-production_model_path: ../models/production_model.pkl
-training_log_path: ../log/training_log.json
+- data/processed/x_test_feng.pkl
+- data/processed/y_test_feng.pkl
+production_model_path: models/production_model.pkl
+training_log_path: log/training_log.json
 
 # Debug related
 print_debug: true
@@ -68,7 +70,7 @@ predictors:
 - PATIENT_TYPE
 - INTUBED
 - PNEUMONIA
-- AGE_BIN
+- AGE
 - PREGNANT
 - DIABETES
 - COPD
@@ -82,8 +84,12 @@ predictors:
 - TOBACCO
 - CLASIFFICATION_FINAL
 - ICU
+- AGE_BIN
 
 # Range of data related
+range_boolean:
+- 1
+- 2
 range_usmr:
 - 1
 - 99

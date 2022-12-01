@@ -11,33 +11,24 @@ valid_set_path:
 test_set_path:
 - ../data/processed/x_test.pkl
 - ../data/processed/y_test.pkl
-train_set_rus_path:
-- ../data/processed/x_rus.pkl
-- ../data/processed/y_rus.pkl
-train_set_ros_path:
-- ../data/processed/x_ros.pkl
-- ../data/processed/y_ros.pkl
-train_set_sm_path:
-- ../data/processed/x_sm.pkl
-- ../data/processed/y_sm.pkl
 train_feng_set_path:
-- ../data/processed/x_train_feng.pkl
-- ../data/processed/y_train_feng.pkl
+- data/processed/x_train_feng.pkl
+- data/processed/y_train_feng.pkl
 valid_feng_set_path:
-- ../data/processed/x_valid_feng.pkl
-- ../data/processed/y_valid_feng.pkl
+- data/processed/x_valid_feng.pkl
+- data/processed/y_valid_feng.pkl
 test_feng_set_path:
-- ../data/processed/x_test_feng.pkl
-- ../data/processed/y_test_feng.pkl
-production_model_path: ../models/production_model.pkl
-training_log_path: ../log/training_log.json
+- data/processed/x_test_feng.pkl
+- data/processed/y_test_feng.pkl
+production_model_path: models/production_model.pkl
+ohe_stasiun_path: models/ohe_stasiun.pkl
+le_encoder_path: models/le_encoder.pkl
+training_log_path: log/training_log.json
 
 # Debug related
 print_debug: true
 
 # Columns by data type related:
-object_columns:
-- DATE_DIED
 int_columns:
 - USMER
 - MEDICAL_UNIT
@@ -59,16 +50,18 @@ int_columns:
 - TOBACCO
 - CLASIFFICATION_FINAL
 - ICU
+- DEATH
 
 # Predictors and label related
-label: DATE_DIED
+label: DEATH
 predictors:
 - USMER
 - MEDICAL_UNIT
+- SEX
 - PATIENT_TYPE
 - INTUBED
 - PNEUMONIA
-- AGE_BIN
+- AGE
 - PREGNANT
 - DIABETES
 - COPD
@@ -84,66 +77,78 @@ predictors:
 - ICU
 
 # Range of data related
+range_dead:
+- 1
+- 2
 range_usmr:
 - 1
-- 99
+- 2
 range_medical_unit:
 - 1
 - 13
 range_sex:
 - 1
-- 99
+- 2
 range_patient_type:
 - 1
-- 99
+- 2
 range_intubed:
 - 1
-- 99
+- 2
 range_pneumonia:
 - 1
-- 99
+- 2 
 range_age:
 - 0
 - 121
-range_age_bin:
-- 0
-- 8
 range_pregnant:
 - 1
-- 99
+- 2
 range_diabetes:
 - 1
-- 99
+- 2
 range_copd:
 - 1
-- 99
+- 2
 range_asthma:
 - 1
-- 99
+- 2
 range_inmsupr:
 - 1
-- 99
+- 2
 range_hipertension:
 - 1
-- 99
+- 2
 range_other_disease:
 - 1
-- 99
+- 2
 range_cardiovascular:
 - 1
-- 99
+- 2
 range_obesity:
 - 1
-- 99
+- 2
 range_renal_chronic:
 - 1
-- 99
+- 2
 range_tobacco:
 - 1
-- 99
+- 2
 range_classification:
 - 1
 - 7
 range_icu:
 - 1
-- 99
+- 2
+
+# Replacement for missing value related
+missing_value_pm10:
+  BAIK: 28
+  TIDAK BAIK: 55
+missing_value_pm25:
+  BAIK: 38
+  TIDAK BAIK: 82
+missing_value_so2: 35
+missing_value_co: 11
+missing_value_o3: 29
+missing_value_no2: 18
