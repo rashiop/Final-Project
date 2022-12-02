@@ -77,6 +77,6 @@ Model yang dipakai adalah KNN karena memiliki f1_score yang paling tinggi
 - merapihkan label form untuk meningkatkan UX
 
 ### Referensi
-https://corona.kendalkab.go.id/berita/profil/kenalan-dengan-covid-19
-https://www.trivusi.web.id/2022/04/evaluasi-sistem-dengan-confusion-matrix.html
-https://www.kaggle.com/datasets/meirnizri/covid19-dataset
+- https://corona.kendalkab.go.id/berita/profil/kenalan-dengan-covid-19
+- https://www.trivusi.web.id/2022/04/evaluasi-sistem-dengan-confusion-matrix.html
+- https://www.kaggle.com/datasets/meirnizri/covid19-dataset
