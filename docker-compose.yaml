@@ -2,7 +2,7 @@ name: covid_prediction
 services:
   streamlit:
     build: docker/streamlit
-    image: poppyps/ml_process_streamlit
+    image: ppsari/ml_process_streamlit
     container_name: streamlit_frontend
     depends_on:
       - api
@@ -12,7 +12,7 @@ services:
       - ./:/home/
   api:
     build: docker/api
-    image: poppyps/ml_process_api
+    image: ppsari/ml_process_api
     container_name: api_backend
     ports:
       - 8080:8080
