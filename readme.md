@@ -3,44 +3,80 @@ Supervised classification predicting covid 19
 [dataset](https://www.kaggle.com/datasets/meirnizri/covid19-dataset)
 
 
-sex: female or male
-age: of the patient.
-classification: covid test findings. Values 1-3 mean that the patient was diagnosed with covid in different
-degrees. 4 or higher means that the patient is not a carrier of covid or that the test is inconclusive.
-patient type: hospitalized or not hospitalized.
-pneumonia: whether the patient already have air sacs inflammation or not.
-pregnancy: whether the patient is pregnant or not.
-diabetes: whether the patient has diabetes or not .
-copd: Indicates whether the patient has Chronic obstructive pulmonary disease or not.
-asthma: whether the patient has asthma or not.
-inmsupr: whether the patient is immunosuppressed or not.
-hypertension: whether the patient has hypertension or not.
-cardiovascular: whether the patient has heart or blood vessels related disease.
-renal chronic: whether the patient has chronic renal disease or not.
-other disease: whether the patient has other disease or not.
-obesity: whether the patient is obese or not.
-tobacco: whether the patient is a tobacco user.
-usmr: Indicates whether the patient treated medical units of the first, second or third level.
-medical unit: type of institution of the National Health System that provided the care.
-intubed: whether the patient was connected to the ventilator.
-icu: Indicates whether the patient had been admitted to an Intensive Care Unit.
-death: indicates whether the patient died or recovered.
+## API
+Untuk melakukan prediksi, diperlukan data
+- USMER: integer range 1 (yes) dan 2 (no)
+- MEDICAL_UNIT: integer range 1 (yes) dan 2 (no)
+- PATIENT_TYPE: integer range 1 (yes) dan 2 (no)
+- INTUBED: integer range 1 (yes) dan 2 (no)
+- PNEUMONIA: integer range 1 (yes) dan 2 (no)
+- PREGNANT: integer range 1 (yes) dan 2 (no)
+- DIABETES: integer range 1 (yes) dan 2 (no)
+- COPD: integer range 1 (yes) dan 2 (no)
+- ASTHMA: integer range 1 (yes) dan 2 (no)
+- INMSUPR: integer range 1 (yes) dan 2 (no)
+- HIPERTENSION: integer range 1 (yes) dan 2 (no)
+- OTHER_DISEASE: integer range 1 (yes) dan 2 (no)
+- CARDIOVASCULAR: integer range 1 (yes) dan 2 (no)
+- OBESITY: integer range 1 (yes) dan 2 (no)
+- RENAL_CHRONIC: integer range 1 (yes) dan 2 (no)
+- TOBACCO: integer range 1 (yes) dan 2 (no)
+- CLASIFFICATION_FINAL: integer range 1 (yes) dan 2 (no)
+- ICU: integer range 1 (yes) dan 2 (no)
+- AGE_BIN: integer range 1-8
 
-## TODO
-- [ ] Problem
-- [ ] 1. Data Prep
-- [ ] 2. EDA
-- [ ] 3. Preproc
-- [ ] 4. Training Model
-- [ ] Eval
-- [ ] Api service
-- [ ] Pytest
-- [ ] deployment
+Response dari API
+Meninggal karena covid
+```
+{
+  "res": 1,
+  "error_msg": ""
+}
+```
+Tidak meninggal
+```
+{
+  "res": 0,
+  "error_msg": ""
+}
+```
 
-## Merangkum
-1. Problem Formulation
-- Why do we need to solve the problem
-- goal expectation
+Workflow
+??
 
+## Project
+### Background
+Selama pandemi, salah satu masalah utama bidang kesehatan adalah kekurangan medical resources dan mendistribusikannya karena banyaknya jumlah pasien. Sehingga untuk dapat memprediksi apakah seorang individual mungkin terdeteksi positif dengan tingkat keparahan tinggi bahkan sebelum mencari penanganan sangatlah penting untuk bisa memastikan resources diutamakan bagi yang benar-benar memerlukan.
 
-source .venv_final/bin/activate
+Karena banyaknya jumlah pasien positif akan lebih baik jika cek bisa dilakukan dengan cepat atau malah oleh semua pihak (suster, keluarga pasien, pasien isolasi mandiri, dan lainnya) berdasarkan kondisi saat ini, status, dan medical history. Situs dengan API machine learning akan kita pilih karena bisa diakses kapan saja dari berbagai perangkat tanpa harus mengunduh terlebih dahulu.
+
+### Project Architecture
+??
+
+### Output project
+Machine learning solution yang disajikan dalam bentuk API dan form dengan metrics f1_score > 70%.
+
+## Cara pemakaian
+Membuka aplikasi dan mensubmit form.
+Ada dua tipe hasil:
+- Selamat
+```
+Predicted Covid Death: Selamat - 0
+```
+- Meninggal
+```
+Predicted Covid Death: Meninggal - 1
+```
+
+## Kesimpulan dan refrensi
+Model yang dipakai adalah KNN karena memiliki f1_score yang paling tinggi
+
+### Future improvement
+- deployment (terkendala masalah OTP kartu kredit)
+- melakukan training ulang untuk mengurangi fitur yang double
+- merapihkan label form untuk meningkatkan UX
+
+### Referensi
+https://corona.kendalkab.go.id/berita/profil/kenalan-dengan-covid-19
+https://www.trivusi.web.id/2022/04/evaluasi-sistem-dengan-confusion-matrix.html
+https://www.kaggle.com/datasets/meirnizri/covid19-dataset
