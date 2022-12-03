@@ -1,1 +1,148 @@
-<mxfile host="app.diagrams.net" modified="2022-12-02T15:54:22.772Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" version="20.6.0" etag="NQrhrIS84gMJOrCxc6Jk" type="github"><diagram id="l3Mx-w2oUA0XnrUWVI67">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-12-03T08:06:10.284Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" version="20.6.0" etag="qr8kmtaZgz2x93E_a5XL" type="github">
+  <diagram id="mS2-Te-Qni_iinfROBX9" name="Page-1">
+    <mxGraphModel dx="1022" dy="1124" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Ip5pmlKS8eaZYFYD2RCD-1" value="Diagram Persiapan Data" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="30" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Ip5pmlKS8eaZYFYD2RCD-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ip5pmlKS8eaZYFYD2RCD-2" target="Ip5pmlKS8eaZYFYD2RCD-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ip5pmlKS8eaZYFYD2RCD-2" value="Mengumpulkan Data sesuai kebutuhan" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ip5pmlKS8eaZYFYD2RCD-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ip5pmlKS8eaZYFYD2RCD-3" target="Ip5pmlKS8eaZYFYD2RCD-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ip5pmlKS8eaZYFYD2RCD-3" value="Load Dataset" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ip5pmlKS8eaZYFYD2RCD-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ip5pmlKS8eaZYFYD2RCD-5" target="Ip5pmlKS8eaZYFYD2RCD-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ip5pmlKS8eaZYFYD2RCD-5" value="Data Definition" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ip5pmlKS8eaZYFYD2RCD-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ip5pmlKS8eaZYFYD2RCD-7" target="Ip5pmlKS8eaZYFYD2RCD-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ip5pmlKS8eaZYFYD2RCD-7" value="Data Validation (cek tipe data, deskripsi, dan dimensi data)" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="500" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ip5pmlKS8eaZYFYD2RCD-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ip5pmlKS8eaZYFYD2RCD-9" target="Ip5pmlKS8eaZYFYD2RCD-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ip5pmlKS8eaZYFYD2RCD-9" value="Handling column error (null, tipe data tidak sesuai)" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="640" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ip5pmlKS8eaZYFYD2RCD-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ip5pmlKS8eaZYFYD2RCD-11" target="Ip5pmlKS8eaZYFYD2RCD-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ip5pmlKS8eaZYFYD2RCD-11" value="Data splitting (train, validation, test)" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="780" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ip5pmlKS8eaZYFYD2RCD-15" value="Dump data" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="920" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ip5pmlKS8eaZYFYD2RCD-17" value="Diagram EDA" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="210" y="30" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Ip5pmlKS8eaZYFYD2RCD-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ip5pmlKS8eaZYFYD2RCD-18" target="Ip5pmlKS8eaZYFYD2RCD-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ip5pmlKS8eaZYFYD2RCD-18" value="Load Train set" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ip5pmlKS8eaZYFYD2RCD-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ip5pmlKS8eaZYFYD2RCD-19" target="Ip5pmlKS8eaZYFYD2RCD-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ip5pmlKS8eaZYFYD2RCD-19" value="Check missing value" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="250" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ip5pmlKS8eaZYFYD2RCD-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ip5pmlKS8eaZYFYD2RCD-21" target="Ip5pmlKS8eaZYFYD2RCD-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ip5pmlKS8eaZYFYD2RCD-21" value="Check informasi statistik (skewness, visualisasi per fitur, pearson correlaction, t-test per feature untuk tahu akan mengimputasi dengan nilai apa di tahap prerprocessing)" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="250" y="360" width="120" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Ip5pmlKS8eaZYFYD2RCD-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ip5pmlKS8eaZYFYD2RCD-23" target="Ip5pmlKS8eaZYFYD2RCD-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ip5pmlKS8eaZYFYD2RCD-23" value="Check imbalance label" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="250" y="555" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ip5pmlKS8eaZYFYD2RCD-25" value="Menyimpulkan akan mengimputasi dengan data apa, apakah perlu balancing label" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="250" y="695" width="120" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="Ip5pmlKS8eaZYFYD2RCD-27" value="Preprocessing dan Feature Engineering" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="430" y="30" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Ip5pmlKS8eaZYFYD2RCD-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ip5pmlKS8eaZYFYD2RCD-28" target="Ip5pmlKS8eaZYFYD2RCD-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ip5pmlKS8eaZYFYD2RCD-28" value="Load Train, Validation, Test set" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="465" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ip5pmlKS8eaZYFYD2RCD-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ip5pmlKS8eaZYFYD2RCD-29" target="Ip5pmlKS8eaZYFYD2RCD-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ip5pmlKS8eaZYFYD2RCD-29" value="Handle missing value (impute atau buang), dalam kasus ini kita mengimputasi" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="465" y="210" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ip5pmlKS8eaZYFYD2RCD-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ip5pmlKS8eaZYFYD2RCD-31" target="Ip5pmlKS8eaZYFYD2RCD-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ip5pmlKS8eaZYFYD2RCD-31" value="Balancing label (undersampling, oversampling, smote)" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="465" y="350" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ip5pmlKS8eaZYFYD2RCD-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ip5pmlKS8eaZYFYD2RCD-33" target="Ip5pmlKS8eaZYFYD2RCD-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ip5pmlKS8eaZYFYD2RCD-33" value="Feature Engineering (mengabung fitur, membuang fitur yang tidak perlu)" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="465" y="490" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ip5pmlKS8eaZYFYD2RCD-35" value="Dump hasil feature engineering" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="465" y="630" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ip5pmlKS8eaZYFYD2RCD-37" value="Permodelan" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="620" y="30" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Ip5pmlKS8eaZYFYD2RCD-40" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ip5pmlKS8eaZYFYD2RCD-38" target="Ip5pmlKS8eaZYFYD2RCD-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ip5pmlKS8eaZYFYD2RCD-38" value="Load Train, Validation, Test set" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="60" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ip5pmlKS8eaZYFYD2RCD-42" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ip5pmlKS8eaZYFYD2RCD-39" target="Ip5pmlKS8eaZYFYD2RCD-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ip5pmlKS8eaZYFYD2RCD-39" value="Create log template" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="650" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ip5pmlKS8eaZYFYD2RCD-44" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ip5pmlKS8eaZYFYD2RCD-41" target="Ip5pmlKS8eaZYFYD2RCD-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ip5pmlKS8eaZYFYD2RCD-41" value="Membuat baseline model dengan balancing undersasmpling, oversampling, smote untuk masing-masing model" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="650" y="340" width="120" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Ip5pmlKS8eaZYFYD2RCD-46" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ip5pmlKS8eaZYFYD2RCD-43" target="Ip5pmlKS8eaZYFYD2RCD-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ip5pmlKS8eaZYFYD2RCD-43" value="Memilih model terbaik berdasarkan f1_score_avg" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="650" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ip5pmlKS8eaZYFYD2RCD-48" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ip5pmlKS8eaZYFYD2RCD-45" target="Ip5pmlKS8eaZYFYD2RCD-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ip5pmlKS8eaZYFYD2RCD-45" value="Melakukan hyperparameter tuning pada model terbaik" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="650" y="620" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ip5pmlKS8eaZYFYD2RCD-47" value="Mendapatkan hasil analisa" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="650" y="760" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
