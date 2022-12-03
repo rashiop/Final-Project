@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-12-03T08:06:10.284Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" version="20.6.0" etag="qr8kmtaZgz2x93E_a5XL" type="github">
+<mxfile host="app.diagrams.net" modified="2022-12-03T08:17:56.386Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" version="20.6.0" etag="A7gKtZ4ScS7xQwCedtu3" type="github" pages="2">
   <diagram id="mS2-Te-Qni_iinfROBX9" name="Page-1">
     <mxGraphModel dx="1022" dy="1124" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -141,6 +141,100 @@
         </mxCell>
         <mxCell id="Ip5pmlKS8eaZYFYD2RCD-47" value="Mendapatkan hasil analisa" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="650" y="760" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="UhbaK4DS1AR_1Lg3MBTC" name="Page-2">
+    <mxGraphModel dx="460" dy="506" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="0m_SKjg-SvNKMdVTATaT-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="0m_SKjg-SvNKMdVTATaT-1" target="0m_SKjg-SvNKMdVTATaT-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="100" y="110" />
+              <mxPoint x="100" y="110" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0m_SKjg-SvNKMdVTATaT-11" value="mengirim data" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="0m_SKjg-SvNKMdVTATaT-3">
+          <mxGeometry x="-0.275" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0m_SKjg-SvNKMdVTATaT-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="30" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0m_SKjg-SvNKMdVTATaT-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="190" y="170" as="sourcePoint" />
+            <mxPoint x="340" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0m_SKjg-SvNKMdVTATaT-6" value="send feature&lt;br&gt;untuk di prediksi" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="0m_SKjg-SvNKMdVTATaT-5">
+          <mxGeometry x="-0.125" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0m_SKjg-SvNKMdVTATaT-2" value="Backend App" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0m_SKjg-SvNKMdVTATaT-4" value="Model" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="340" y="170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0m_SKjg-SvNKMdVTATaT-8" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="0m_SKjg-SvNKMdVTATaT-4" target="0m_SKjg-SvNKMdVTATaT-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="220" y="280" as="sourcePoint" />
+            <mxPoint x="270" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0m_SKjg-SvNKMdVTATaT-9" value="mengirim&lt;br&gt;hasil prediksi" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="0m_SKjg-SvNKMdVTATaT-8">
+          <mxGeometry x="0.16" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0m_SKjg-SvNKMdVTATaT-10" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.658;entryY=1.017;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.633;exitY=-0.017;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="0m_SKjg-SvNKMdVTATaT-2" target="0m_SKjg-SvNKMdVTATaT-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="140" y="170" as="sourcePoint" />
+            <mxPoint x="190" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0m_SKjg-SvNKMdVTATaT-12" value="mengembalikan&lt;br&gt;hasil prediksi" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="0m_SKjg-SvNKMdVTATaT-10">
+          <mxGeometry x="-0.1029" relative="1" as="geometry">
+            <mxPoint x="33" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0m_SKjg-SvNKMdVTATaT-13" value="user" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="360" y="20" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0m_SKjg-SvNKMdVTATaT-14" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="0m_SKjg-SvNKMdVTATaT-13" target="0m_SKjg-SvNKMdVTATaT-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="220" y="270" as="sourcePoint" />
+            <mxPoint x="270" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0m_SKjg-SvNKMdVTATaT-15" value="mensubmit form" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="0m_SKjg-SvNKMdVTATaT-14">
+          <mxGeometry x="0.3281" y="-4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0m_SKjg-SvNKMdVTATaT-16" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="0m_SKjg-SvNKMdVTATaT-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="220" y="270" as="sourcePoint" />
+            <mxPoint x="360" y="40" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0m_SKjg-SvNKMdVTATaT-17" value="menampilkan hasil&lt;br&gt;yang dimengerti user" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="0m_SKjg-SvNKMdVTATaT-16">
+          <mxGeometry x="-0.242" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0m_SKjg-SvNKMdVTATaT-19" value="Frontend App&lt;br&gt;live on AWS" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="10" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="0m_SKjg-SvNKMdVTATaT-20" value="Backend App&lt;br&gt;live on AWS" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="160" width="120" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
