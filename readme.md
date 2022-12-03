@@ -3,6 +3,7 @@ Supervised classification predicting covid 19
 [dataset](https://www.kaggle.com/datasets/meirnizri/covid19-dataset)
 
 
+
 ## API
 Untuk melakukan prediksi, diperlukan data
 - USMER: integer range 1 (yes) dan 2 (no)
@@ -42,7 +43,8 @@ Tidak meninggal
 ```
 
 Workflow
-??
+<img width="372" alt="Screenshot 2022-12-02 at 23 01 36" src="https://user-images.githubusercontent.com/31156788/205334258-6d3328ca-5d74-4776-a996-79762dc4c8b3.png">
+
 
 ## Project
 ### Background
