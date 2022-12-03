@@ -1,10 +1,41 @@
-## What
+## Project
 Supervised classification predicting covid 19
 [dataset](https://www.kaggle.com/datasets/meirnizri/covid19-dataset)
 
+### Background
+Selama pandemi, salah satu masalah utama bidang kesehatan adalah kekurangan medical resources dan mendistribusikannya karena banyaknya jumlah pasien. Sehingga untuk dapat memprediksi apakah seorang individual mungkin terdeteksi positif dengan tingkat keparahan tinggi bahkan sebelum mencari penanganan sangatlah penting untuk bisa memastikan resources diutamakan bagi yang benar-benar memerlukan.
 
+Karena banyaknya jumlah pasien positif akan lebih baik jika cek bisa dilakukan dengan cepat atau malah oleh semua pihak (suster, keluarga pasien, pasien isolasi mandiri, dan lainnya) berdasarkan kondisi saat ini, status, dan medical history. Situs dengan API machine learning akan kita pilih karena bisa diakses kapan saja dari berbagai perangkat tanpa harus mengunduh terlebih dahulu.
 
-## API
+### Workflow
+1. Persiapan Data
+<img width="111" alt="Screenshot 2022-12-03 at 14 41 24" src="https://user-images.githubusercontent.com/31156788/205430501-fd179373-e23f-4a0a-b20a-90952b9b346f.png">
+2. EDA
+<img width="99" alt="Screenshot 2022-12-03 at 14 45 57" src="https://user-images.githubusercontent.com/31156788/205430631-48ec9ae5-b540-48a5-86db-ac8a38759f70.png">
+3. Preprocessing dan Feature Engineering
+<img width="110" alt="Screenshot 2022-12-03 at 14 49 27" src="https://user-images.githubusercontent.com/31156788/205430744-236fdfdd-65dd-45f5-a607-30aceb338655.png">
+4. Modeling
+<img width="80" alt="Screenshot 2022-12-03 at 14 54 30" src="https://user-images.githubusercontent.com/31156788/205430914-15a6a293-1359-4397-810a-e8f0cb54c9f0.png">
+
+### Project Architecture
+??
+
+### Output project
+Machine learning solution yang disajikan dalam bentuk API dan form dengan metrics f1_score > 70%.
+
+## Cara pemakaian
+Membuka aplikasi dan mensubmit form.
+Ada dua tipe hasil:
+- Selamat
+```
+Predicted Covid Death: Selamat - 0
+```
+- Meninggal
+```
+Predicted Covid Death: Meninggal - 1
+```
+
+### API
 Untuk melakukan prediksi, diperlukan data
 - USMER: integer range 1 (yes) dan 2 (no)
 - MEDICAL_UNIT: integer range 1 (yes) dan 2 (no)
@@ -25,7 +56,15 @@ Untuk melakukan prediksi, diperlukan data
 - CLASIFFICATION_FINAL: integer range 1 (yes) dan 2 (no)
 - ICU: integer range 1 (yes) dan 2 (no)
 - AGE_BIN: integer range 1-8
-
+    - 1: 0-24
+    - 2: 25-34
+    - 3: 35-44
+    - 4: 45-54
+    - 5: 55-64
+    - 6: 65-74
+    - 7: 75-84
+    - 8: >= 85
+ 
 Response dari API
 Meninggal karena covid
 ```
@@ -42,36 +81,14 @@ Tidak meninggal
 }
 ```
 
-Workflow
-<img width="372" alt="Screenshot 2022-12-02 at 23 01 36" src="https://user-images.githubusercontent.com/31156788/205334258-6d3328ca-5d74-4776-a996-79762dc4c8b3.png">
 
-
-## Project
-### Background
-Selama pandemi, salah satu masalah utama bidang kesehatan adalah kekurangan medical resources dan mendistribusikannya karena banyaknya jumlah pasien. Sehingga untuk dapat memprediksi apakah seorang individual mungkin terdeteksi positif dengan tingkat keparahan tinggi bahkan sebelum mencari penanganan sangatlah penting untuk bisa memastikan resources diutamakan bagi yang benar-benar memerlukan.
-
-Karena banyaknya jumlah pasien positif akan lebih baik jika cek bisa dilakukan dengan cepat atau malah oleh semua pihak (suster, keluarga pasien, pasien isolasi mandiri, dan lainnya) berdasarkan kondisi saat ini, status, dan medical history. Situs dengan API machine learning akan kita pilih karena bisa diakses kapan saja dari berbagai perangkat tanpa harus mengunduh terlebih dahulu.
-
-### Project Architecture
-??
-
-### Output project
-Machine learning solution yang disajikan dalam bentuk API dan form dengan metrics f1_score > 70%.
-
-## Cara pemakaian
-Membuka aplikasi dan mensubmit form.
-Ada dua tipe hasil:
-- Selamat
-```
-Predicted Covid Death: Selamat - 0
-```
-- Meninggal
-```
-Predicted Covid Death: Meninggal - 1
-```
 
 ## Kesimpulan dan refrensi
 Model yang dipakai adalah KNN karena memiliki f1_score yang paling tinggi
+
+## Cara menjalankan di local
+0. Memiliki docker di local
+1. Masuk ke root directory project di terminal & `docker compose up`
 
 ### Future improvement
 - deployment (terkendala masalah OTP kartu kredit)
