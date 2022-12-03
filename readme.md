@@ -21,6 +21,7 @@ Karena banyaknya jumlah pasien positif akan lebih baik jika cek bisa dilakukan d
 <img width="449" alt="Screenshot 2022-12-03 at 15 10 54" src="https://user-images.githubusercontent.com/31156788/205431400-46a6ced0-489e-4a7f-942e-875cfdb501df.png">
 
 Seharusnya
+
 <img width="449" alt="Screenshot 2022-12-03 at 15 11 52" src="https://user-images.githubusercontent.com/31156788/205431430-0372b05c-64d2-4901-8264-c05c40ffbc6c.png">
 
 ### Output project
@@ -83,7 +84,6 @@ Tidak meninggal
   "error_msg": ""
 }
 ```
-
 
 
 ## Kesimpulan dan refrensi
