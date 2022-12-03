@@ -18,7 +18,10 @@ Karena banyaknya jumlah pasien positif akan lebih baik jika cek bisa dilakukan d
 <img width="80" alt="Screenshot 2022-12-03 at 14 54 30" src="https://user-images.githubusercontent.com/31156788/205430914-15a6a293-1359-4397-810a-e8f0cb54c9f0.png">
 
 ### Project Architecture
-??
+<img width="449" alt="Screenshot 2022-12-03 at 15 10 54" src="https://user-images.githubusercontent.com/31156788/205431400-46a6ced0-489e-4a7f-942e-875cfdb501df.png">
+
+Seharusnya
+<img width="449" alt="Screenshot 2022-12-03 at 15 11 52" src="https://user-images.githubusercontent.com/31156788/205431430-0372b05c-64d2-4901-8264-c05c40ffbc6c.png">
 
 ### Output project
 Machine learning solution yang disajikan dalam bentuk API dan form dengan metrics f1_score > 70%.
@@ -91,7 +94,7 @@ Model yang dipakai adalah KNN karena memiliki f1_score yang paling tinggi
 1. Masuk ke root directory project di terminal & `docker compose up`
 
 ### Future improvement
-- deployment (terkendala masalah OTP kartu kredit)
+- Live di cloud, karena masalah simcard (tidak bisa login karena OTP) jadi di local saja.
 - melakukan training ulang untuk mengurangi fitur yang double
 - merapihkan label form untuk meningkatkan UX
 
