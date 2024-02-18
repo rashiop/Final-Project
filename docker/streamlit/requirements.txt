@@ -18,7 +18,7 @@ MarkupSafe==2.1.1
 numpy==1.23.4
 packaging==21.3
 pandas==1.5.1
-Pillow==9.3.0
+Pillow==10.0.1
 protobuf==3.20.3
 pyarrow==10.0.0
 pydeck==0.8.0
