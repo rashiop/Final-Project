@@ -41,7 +41,7 @@ tornado==6.4.1
 typing_extensions==4.4.0
 tzdata==2022.6
 tzlocal==4.2
-urllib3==1.26.18
+urllib3==1.26.19
 validators==0.20.0
 watchdog==2.1.9
 zipp==3.10.0
